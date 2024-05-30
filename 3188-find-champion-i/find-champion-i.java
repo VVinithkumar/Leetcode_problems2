@@ -15,16 +15,17 @@ class Solution {
                 sum++;
             }
         }
-        al.add(sum);
+        // al.add(sum);
+        if(sum==n-1) return i;
        } 
-       int max=Collections.max(al);
-       for(int i=0;i<al.size();i++)
-       {
-         if(max==al.get(i))
-         {
-            return i;
-         }
-       }
+    //    int max=Collections.max(al);
+    //    for(int i=0;i<al.size();i++)
+    //    {
+    //      if(max==al.get(i))
+    //      {
+    //         return i;
+    //      }
+    //    }
        return -1;
     }
 }
