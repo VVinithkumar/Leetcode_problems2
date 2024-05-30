@@ -1,0 +1,28 @@
+class Solution {
+    public int findChampion(int[][] grid) {
+        int sum=0;
+        int ans=0;
+        List<Integer> al=new ArrayList<>();
+       for(int i=0;i<grid[0].length;i++)
+       {
+        sum=0;
+        for(int j=0;j<grid.length;j++)
+        {
+            if(grid[i][j]==1)
+            {
+                sum++;
+            }
+        }
+        al.add(sum);
+       } 
+       int max=Collections.max(al);
+       for(int i=0;i<al.size();i++)
+       {
+         if(max==al.get(i))
+         {
+            return i;
+         }
+       }
+       return -1;
+    }
+}
