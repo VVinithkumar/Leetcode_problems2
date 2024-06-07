@@ -2,7 +2,6 @@ class Solution {
     public int[] sortEvenOdd(int[] nums) {
         int arr[]=new int[nums.length];
         int a=0;
-        
         int b=1;
         List<Integer> al=new ArrayList<>();
         List<Integer> al1=new ArrayList<>();
@@ -19,9 +18,6 @@ class Solution {
         }
         Collections.sort(al);
         Collections.sort(al1);
-        // System.out.print(al);
-        // System.out.print(al1);
-
         for(int i=0;i<al.size();i++)
         {
             arr[a]=al.get(i);
