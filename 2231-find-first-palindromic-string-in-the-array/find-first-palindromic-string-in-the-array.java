@@ -7,7 +7,6 @@ class Solution {
         {
             s+=words[i];
             sb.append(words[i]);
-            // System.out.println(sb);
             sb.reverse();
             if(s.equals(sb.toString()))
             {
