@@ -8,6 +8,7 @@ class Solution {
          {
             n+=Math.abs(seats[i]-students[i]);
          }
+          System.gc();
          return n;
     }
 }
