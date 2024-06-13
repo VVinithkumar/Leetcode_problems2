@@ -3,7 +3,8 @@ class Solution {
         Arrays.sort(seats);
          Arrays.sort(students);
          int n=0;
-         for(int i=0;i<seats.length;i++)
+         int v=seats.length;
+         for(int i=0;i<v;i++)
          {
             n+=Math.abs(seats[i]-students[i]);
          }
