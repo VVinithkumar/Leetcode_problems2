@@ -1,7 +1,6 @@
 class Solution {
     public boolean digitCount(String num) {
         char c[]=num.toCharArray();
-        // System.out.print(Arrays.toString(c));
         String ss="";
          int count=0;
         for(int i=0;i<c.length;i++)
@@ -15,7 +14,6 @@ class Solution {
                 }
             }
             ss+=count;
-            // System.out.println(ss);
         }
         if(num.equals(ss))
         {
